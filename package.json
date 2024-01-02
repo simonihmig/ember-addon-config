@@ -1,8 +1,8 @@
 {
   "private": true,
-  "repository": "",
+  "repository": "https://github.com/simonihmig/ember-addon-config.git",
   "license": "MIT",
-  "author": "",
+  "author": "Simon Ihmig <simon.ihmig@gmail.com>",
   "scripts": {
     "build": "pnpm --filter ./test-packages/* build",
     "lint": "pnpm --filter '*' lint",
