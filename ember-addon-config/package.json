@@ -24,6 +24,7 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
+    "@embroider/macros": "^1.13.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.3",
