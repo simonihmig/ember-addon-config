@@ -1,3 +1,4 @@
 packages:
-  - 'test-packages/v2-addon'
+  - 'ember-addon-config'
+  - 'test-packages/*'
   - 'test-app'

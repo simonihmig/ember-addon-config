@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "",
   "scripts": {
-    "build": "pnpm --filter ember-addon-config build",
+    "build": "pnpm --filter ./test-packages/* build",
     "lint": "pnpm --filter '*' lint",
     "lint:fix": "pnpm --filter '*' lint:fix",
     "prepare": "pnpm build",

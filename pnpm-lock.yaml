@@ -17,6 +17,42 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(prettier@3.1.1)
 
+  ember-addon-config:
+    devDependencies:
+      '@babel/eslint-parser':
+        specifier: ^7.23.3
+        version: 7.23.3(@babel/core@7.23.6)(eslint@8.56.0)
+      '@babel/plugin-proposal-decorators':
+        specifier: ^7.23.6
+        version: 7.23.6(@babel/core@7.23.6)
+      '@ember/optional-features':
+        specifier: ^2.0.0
+        version: 2.0.0
+      concurrently:
+        specifier: ^8.2.2
+        version: 8.2.2
+      eslint:
+        specifier: ^8.55.0
+        version: 8.56.0
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@8.56.0)
+      eslint-plugin-ember:
+        specifier: ^11.11.1
+        version: 11.12.0(eslint@8.56.0)
+      eslint-plugin-n:
+        specifier: ^16.4.0
+        version: 16.4.0(eslint@8.56.0)
+      eslint-plugin-prettier:
+        specifier: ^5.0.1
+        version: 5.0.1(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.1.1)
+      eslint-plugin-qunit:
+        specifier: ^8.0.1
+        version: 8.0.1(eslint@8.56.0)
+      prettier:
+        specifier: ^3.1.1
+        version: 3.1.1
+
   test-app:
     devDependencies:
       '@babel/core':
@@ -52,9 +88,6 @@ importers:
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2
-      ember-addon-config:
-        specifier: workspace:*
-        version: link:../test-packages/v2-addon
       ember-auto-import:
         specifier: ^2.7.0
         version: 2.7.0(webpack@5.89.0)
@@ -157,6 +190,9 @@ importers:
       stylelint-prettier:
         specifier: ^4.1.0
         version: 4.1.0(prettier@3.1.1)(stylelint@15.11.0)
+      test-v2-addon:
+        specifier: workspace:*
+        version: link:../test-packages/v2-addon
       tracked-built-ins:
         specifier: ^3.3.0
         version: 3.3.0
@@ -10180,7 +10216,7 @@ packages:
   /regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
-      '@babel/runtime': 7.17.0
+      '@babel/runtime': 7.23.7
     dev: true
 
   /regex-not@1.0.2:
