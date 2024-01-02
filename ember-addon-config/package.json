@@ -1,6 +1,6 @@
 {
   "name": "ember-addon-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Provide an opinionated way to configure v2 addons",
   "keywords": [
     "ember-addon"

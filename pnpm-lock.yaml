@@ -220,7 +220,7 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1(@babel/core@7.23.6)
       ember-addon-config:
-        specifier: ^0.0.0
+        specifier: ^0.1.0
         version: link:../../ember-addon-config
     devDependencies:
       '@babel/core':
