@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
   'test-v2-addon': {
     foo: 'bar',
   },

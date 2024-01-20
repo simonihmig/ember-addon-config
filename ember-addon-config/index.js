@@ -14,8 +14,15 @@ module.exports = {
   addonconfig: null,
 
   included(parent) {
+    this.loadAppConfig(parent);
+    this._super.included.apply(this, arguments);
+  },
+
+  async loadAppConfig(parent) {
     if (!this.addonconfig) {
-      this.addonconfig = require(join(parent.project.root, 'config/addons'));
+      this.addonconfig = await import(
+        join(parent.project.root, 'config/addons.mjs')
+      );
     }
 
     const appInstance = this._findHost();
@@ -29,7 +36,5 @@ module.exports = {
         this.addonconfig[packageName],
       );
     }
-
-    this._super.included.apply(this, arguments);
   },
 };
