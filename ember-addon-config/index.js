@@ -15,7 +15,16 @@ module.exports = {
 
   included(parent) {
     if (!this.addonconfig) {
-      this.addonconfig = require(join(parent.project.root, 'config/addons'));
+      try {
+        this.addonconfig = require(
+          join(parent.project.root, 'config', 'addons'),
+        );
+      } catch (e) {
+        if (e.code !== 'MODULE_NOT_FOUND') {
+          throw e;
+        }
+        this.addonconfig = {};
+      }
     }
 
     const appInstance = this._findHost();
